@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+<body>
+    <h1>Profile Edit Page</h1>
+    <p>Enter the details below</p>
+    <p>{{message}}</p>
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            {{titleform.as_table}}
+        </table>
+        <input type="submit" value ="Submit">
+    </form> 
+</body>
+</html>

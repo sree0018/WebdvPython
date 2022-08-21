@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <title>Index Page</title>
+
+    <head>
+        <style>
+            .myDiv 
+            {
+                border: 5px outset black;
+                background-color: lightblue;
+                text-align: center;
+            }
+            p.a 
+            {
+                font-family: "Times New Roman", Times, serif;
+            }
+            p.b 
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="myDiv">
+            <h1 class ="a">WELCOME</h1>
+            <p>Trial number 1: PythonWebDev.</p> 
+            <!-- {{message}} -->
+            <a href="/contact">Contact </a> 
+            <a href="{% url 'login' %}">Login</a>
+           
+        </div>
+        {% load static %}
+        
+    </body>
+
+</html>
